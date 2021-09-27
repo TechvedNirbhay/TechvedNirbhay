@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ninja.techved.com_testCases.TC1_Login">
+      <class name="ninja.techved.com_testCases.TC2_Login">
         <methods>
           <include name="setup"/>
-          <include name="login"/>
+          <include name="TC2_Login"/>
         </methods>
-      </class> <!-- ninja.techved.com_testCases.TC1_Login -->
+      </class> <!-- ninja.techved.com_testCases.TC2_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

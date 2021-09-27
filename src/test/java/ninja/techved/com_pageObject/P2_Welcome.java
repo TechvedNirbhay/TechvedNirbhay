@@ -22,12 +22,16 @@ WebDriver ldriver;
 	@FindBy(id = "lblEmployeeName")
 	WebElement get_text; 
 
-
+	@FindBy(id ="ContentPlaceHolder1_ImgBtnClose")
+	WebElement ImgBtnClose;
 
 	public String getText() {
 		
 		String pagewelcometext= BaseClass.getTextFromPage(get_text, 9);
 		return pagewelcometext;
+	}
 	
-}
+	public void imgBtnClose() {
+		BaseClass.clickOn(ImgBtnClose, 3);
+	}
 }

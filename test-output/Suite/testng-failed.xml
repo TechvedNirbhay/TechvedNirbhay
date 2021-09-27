@@ -10,7 +10,7 @@
       <class name="ninja.techved.com_testCases.TC2_Login">
         <methods>
           <include name="setup"/>
-          <include name="TC2_Login"/>
+          <include name="TC2_Login" invocation-numbers="0 1 2 3 4 5 6"/>
         </methods>
       </class> <!-- ninja.techved.com_testCases.TC2_Login -->
     </classes>

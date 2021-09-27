@@ -35,6 +35,14 @@ public class P1_Login {
 	@FindBy(xpath ="//input[@value='Login']")
 	WebElement SubmitButton;
 	
+	@FindBy(xpath = "//span[text()='Enter valid email id']")
+	WebElement ErrMass;
+	
+
+	@FindBy(xpath = "//span[text()='Invalid login details.']")
+	WebElement ErrMassWithTechDomain;
+	
+	
 	public void setTextInUnameField(String User_name) {
 		
 		BaseClass.sendKeys(textuname, 6, User_name);
@@ -60,6 +68,23 @@ public class P1_Login {
 		BaseClass.clickOn(SubmitButton, 6);
 	}
 	
+	public void clearUsernameTextFilds() {
+		BaseClass.clearTextFields(textuname, 15);
+	}
+	
+	public void clearPasswordInputFields() {
+		BaseClass.clearTextFields(textupass, 15);
+	}
+	
+	public String getErrMassFromPage() {
+		String ErrMessage= BaseClass.getTextFromPage(ErrMass, 12);
+		return ErrMessage;
+	}
+	
+	public String ErrMassWithTechDomain() {
+		String ErrMassWithTechDomain1= BaseClass.getTextFromPage(ErrMassWithTechDomain, 12);
+		return ErrMassWithTechDomain1;
+	}
 }
 
 
